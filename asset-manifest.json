@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/pregnancy-recipes/static/css/main.f855e6bc.css",
-    "main.js": "/pregnancy-recipes/static/js/main.c497cd74.js",
+    "main.css": "/pregnancy-recipes/static/css/main.e6c13ad2.css",
+    "main.js": "/pregnancy-recipes/static/js/main.5ff9f9c8.js",
     "static/js/453.587e59f2.chunk.js": "/pregnancy-recipes/static/js/453.587e59f2.chunk.js",
-    "static/media/logo.svg": "/pregnancy-recipes/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pregnancy-recipes/index.html",
-    "main.f855e6bc.css.map": "/pregnancy-recipes/static/css/main.f855e6bc.css.map",
-    "main.c497cd74.js.map": "/pregnancy-recipes/static/js/main.c497cd74.js.map",
+    "main.e6c13ad2.css.map": "/pregnancy-recipes/static/css/main.e6c13ad2.css.map",
+    "main.5ff9f9c8.js.map": "/pregnancy-recipes/static/js/main.5ff9f9c8.js.map",
     "453.587e59f2.chunk.js.map": "/pregnancy-recipes/static/js/453.587e59f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c497cd74.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5ff9f9c8.js"
   ]
 }
