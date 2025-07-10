@@ -6,7 +6,7 @@ import RecipeViewer from "./components/RecipeViewer";
 function App() {
   return (
     <Router basename="/pregnancy-recipes">
-      <div className="min-h-screen bg-pink-50 text-gray-800">
+      <div className="min-h-screen bg-pink-50 text-gray-800 font-sans">
         <Routes>
           <Route path="/" element={<RecipeIndex />} />
           <Route path="/recipes/:recipeName" element={<RecipeViewer />} />

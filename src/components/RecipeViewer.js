@@ -30,20 +30,22 @@ function RecipeViewer() {
   const fullPath = file ? `${process.env.PUBLIC_URL}/recipes/${file}` : null;
 
   return fullPath ? (
-    <div className="flex flex-col items-center px-2 pb-4">
-      <div className="w-full max-w-4xl aspect-[3/4] sm:aspect-[4/3] md:aspect-video">
+    <div className="px-4 pb-6 pt-4 max-w-4xl mx-auto">
+      <div className="w-full h-[80vh] rounded-md overflow-hidden border border-gray-300">
         <iframe
           title={file}
           src={fullPath}
-          className="w-full h-full rounded-xl border border-gray-300"
+          className="w-full h-full"
         />
       </div>
-      <Link
-        to="/"
-        className="mt-4 inline-block text-pink-600 hover:underline text-sm"
-      >
-        ← Back to all recipes
-      </Link>
+      <div className="mt-4 text-center">
+        <Link
+          to="/"
+          className="text-pink-600 hover:underline text-sm"
+        >
+          ← Back to all recipes
+        </Link>
+      </div>
     </div>
   ) : (
     <p className="p-4 text-center">Recipe not found.</p>
