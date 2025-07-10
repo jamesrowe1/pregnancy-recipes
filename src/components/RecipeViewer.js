@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function RecipeViewer() {
   const { recipeName } = useParams();
@@ -27,15 +27,26 @@ function RecipeViewer() {
   };
 
   const file = fileMap[recipeName];
+  const fullPath = file ? `${process.env.PUBLIC_URL}/recipes/${file}` : null;
 
-  return file ? (
-    <iframe
-      title={file}
-      src={`${process.env.PUBLIC_URL}/recipes/${file}`}
-      style={{ width: "100%", height: "90vh", border: "none" }}
-    />
+  return fullPath ? (
+    <div className="flex flex-col items-center px-2 pb-4">
+      <div className="w-full max-w-4xl aspect-[3/4] sm:aspect-[4/3] md:aspect-video">
+        <iframe
+          title={file}
+          src={fullPath}
+          className="w-full h-full rounded-xl border border-gray-300"
+        />
+      </div>
+      <Link
+        to="/"
+        className="mt-4 inline-block text-pink-600 hover:underline text-sm"
+      >
+        ← Back to all recipes
+      </Link>
+    </div>
   ) : (
-    <p className="p-4">Recipe not found.</p>
+    <p className="p-4 text-center">Recipe not found.</p>
   );
 }
 
