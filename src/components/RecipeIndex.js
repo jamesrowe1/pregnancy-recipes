@@ -25,19 +25,14 @@ const recipes = [
 
 function RecipeIndex() {
   return (
-    <div className="max-w-md mx-auto px-4 py-6">
-      <h1 className="text-3xl font-bold mb-6 text-center">Pregnancy Recipes</h1>
-      <ul className="grid grid-cols-1 gap-3">
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-4">Pregnancy Recipes</h1>
+      <ul className="list-disc pl-6">
         {recipes.map((title) => {
           const path = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "");
           return (
             <li key={title}>
-              <Link
-                to={`/recipes/${path}`}
-                className="block p-4 rounded-lg shadow-md bg-white text-center text-base font-medium hover:bg-pink-100 transition"
-              >
-                {title}
-              </Link>
+              <Link to={`/recipes/${path}`}>{title}</Link>
             </li>
           );
         })}
