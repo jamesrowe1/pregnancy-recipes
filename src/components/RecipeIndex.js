@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const recipes = [
+  "30-Minute Chicken Pasta Primavera",
   "Arugula Salad With Fruit",
+  "Bibimbap",
+  "Corn Salad Without Mayo",
   "Couscous Salad with Butternut Squash and Cranberries",
   "Garlic Parmesan Kale Pasta",
   "Grilled Sweet Potatoes",
@@ -14,12 +17,14 @@ const recipes = [
   "Rotini with Chicken and Garden Vegetables",
   "Rub Lamb Chops",
   "Salmon Couscous Salad Bowl",
+  "Slow Cooker Mongolian Beef",
   "Slow Cooker Lamb Curry",
   "Sous Vide Turkey Breast",
   "Steak Fajitas with Peppers & Onions",
   "Sweet Potato Bowl",
   "Taste of Morocco",
   "Tuscan-Style Veal Chops",
+  "Watermelon Salad Recipe with Feta and Cucumber",
   "Yellow Curry with Chicken, Kale & Butternut Squash"
 ];
 
