@@ -6,7 +6,7 @@ import RecipeViewer from "./components/RecipeViewer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pregnancy-recipes">
       <Routes>
         <Route path="/" element={<RecipeIndex />} />
         <Route path="/recipes/:recipeName" element={<RecipeViewer />} />

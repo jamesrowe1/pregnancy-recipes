@@ -31,7 +31,7 @@ function RecipeViewer() {
   return file ? (
     <iframe
       title={file}
-      src={`/recipes/${file}`}
+      src={`${process.env.PUBLIC_URL}/recipes/${file}`}
       style={{ width: "100%", height: "90vh", border: "none" }}
     />
   ) : (
